@@ -1,0 +1,81 @@
+.post-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.post-container hr {
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--maincolor);
+}
+
+.post-container > header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-container > header h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondcolor);
+}
+
+.post-image-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+#post-content-container {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  grid-gap: 2rem;
+}
+
+#post-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#author-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  border: 1.5px solid var(--maincolor);
+  border-radius: 10px;
+}
+
+#author-box p {
+  margin: 10px 0;
+}
+
+#author-box h4 {
+  font-size: 1.5rem;
+}
+#author-box h5 {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: var(--secondcolor);
+}
+
+#author-photo-container {
+  background: url("../assets/author.jpg") center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 15px 0;
+}
+
+#share-box {
+  text-align: center;
+  padding: 1rem 0;
+  border: 1.5px solid var(--maincolor);
+  border-radius: 10px;
+}

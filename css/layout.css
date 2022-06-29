@@ -2,30 +2,31 @@
   display: grid;
   justify-content: center;
   grid-template-columns: minmax(250px, 12%) 1fr;
-  grid-template-rows: 92% 8%;
+  grid-template-rows: 95% minmax(5%, auto);
   grid-template-areas:
     "nav ct"
     "ft ft";
   width: 100vw;
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
 }
 
 #navbar {
-  padding: 1.5rem;
+  padding: 2.5rem;
   grid-area: nav;
+  border-right: 2px solid var(--maincolor);
 }
 
 #content {
   grid-area: ct;
   align-items: center;
-  padding: 1.5rem 5rem;
+  padding: 2.5rem 5rem;
   overflow: auto;
 }
 
@@ -33,22 +34,30 @@
   grid-area: ft;
   justify-content: center;
   align-items: center;
+  background-color: var(--maincolor);
+  color: white;
+  font-weight: 200;
+  font-size: 0.9rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .container {
-    grid-template-columns: 100%;
-    grid-template-rows: 10% auto 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(10%, auto) auto minmax(8%, auto);
     grid-template-areas:
       "nav nav"
       "ct ct"
       "ft ft";
   }
   .box {
-    align-items: center;
+    /* align-items: center; */
   }
-
   #content {
     padding: 0;
+  }
+  #navbar {
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 2px solid var(--maincolor);
   }
 }

@@ -9,16 +9,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="box" id="navbar">
+      <nav class="box" id="navbar">
         <h1>Terry's Personal Blog Website</h1>
-      </div>
-      <div class="box" id="content">
-        <div class="box">
-          <h2>Posts</h2>
+        <div class="link-container">
+          <a href="./index.html" class="button">Home</a>
+          <a href="./posts/a.html" class="button">Post A</a>
+          <a href="./posts/b.html" class="button">Post B</a>
+          <a href="./posts/c.html" class="button">Post C</a>
+        </div>
+      </nav>
+      <main class="box" id="content">
+        <div class="box card-container">
           <div class="card">
-            <div class="card-image-box"></div>
+            <div class="card-image-box" id="photoA"></div>
             <div class="card-content-box">
-              <h3>Example Blog Post</h3>
+              <h3>Blog Post A</h3>
               <h4>November 12, 2022</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -27,12 +32,13 @@
                 atque non perspiciatis vitae. Eveniet provident nisi
                 repellendus!
               </p>
+              <a href="./posts/a.html" class="button">Read more</a>
             </div>
           </div>
           <div class="card">
-            <div class="card-image-box"></div>
+            <div class="card-image-box" id="photoB"></div>
             <div class="card-content-box">
-              <h3>Example Blog Post</h3>
+              <h3>Blog Post B</h3>
               <h4>November 12, 2022</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -41,12 +47,13 @@
                 atque non perspiciatis vitae. Eveniet provident nisi
                 repellendus!
               </p>
+              <a href="./posts/b.html" class="button">Read more</a>
             </div>
           </div>
           <div class="card">
-            <div class="card-image-box"></div>
+            <div class="card-image-box" id="photoC"></div>
             <div class="card-content-box">
-              <h3>Example Blog Post</h3>
+              <h3>Blog Post C</h3>
               <h4>November 12, 2022</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -55,13 +62,14 @@
                 atque non perspiciatis vitae. Eveniet provident nisi
                 repellendus!
               </p>
+              <a href="./posts/c.html" class="button">Read more</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="box" id="footer">
-        <h5>Copyright Terry Cheng 2022. All right reserved.</h5>
-      </div>
+      </main>
+      <footer class="box" id="footer">
+        Copyright Terry Cheng 2022. All right reserved.
+      </footer>
     </div>
   </body>
 </html>

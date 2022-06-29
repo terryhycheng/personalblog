@@ -1,9 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./css/layout.css";
 @import "./css/components.css";
+@import "./css/post.css";
+
+:root {
+  --maincolor: rgb(19, 34, 63);
+  --secondcolor: rgb(140, 143, 150);
+}
 
 * {
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-size: 0.89rem;
+  line-height: 1.15rem;
+}
+
+button {
+  cursor: pointer;
 }
