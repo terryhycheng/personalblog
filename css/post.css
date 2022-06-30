@@ -24,8 +24,13 @@
   background-position: center;
   background-size: cover;
   min-height: 40vh;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   border-radius: 10px;
+}
+
+#pic-caption {
+  margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 #post-content-container {
@@ -89,6 +94,24 @@
 
 #sharing-buttons-container img {
   width: 30px;
+}
+
+#quote-box {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 @media (max-width: 1200px) {
