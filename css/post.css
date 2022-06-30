@@ -79,3 +79,37 @@
   border: 1.5px solid var(--maincolor);
   border-radius: 10px;
 }
+
+#sharing-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+#sharing-buttons-container img {
+  width: 30px;
+}
+
+@media (max-width: 1200px) {
+  .post-container {
+    width: 95%;
+    margin: 2rem 0;
+  }
+  #post-content-container {
+    grid-template-columns: 100%;
+  }
+
+  .post-image-box {
+    min-height: 35vh;
+  }
+
+  .post-container > header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .post-container > header h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
